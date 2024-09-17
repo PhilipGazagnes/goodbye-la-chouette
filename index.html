@@ -13,15 +13,21 @@
           font-display: swap;
         }
         @font-face {
-          font-family: 'font2';
-          src: url('ubuntu-b-webfont.woff2') format('woff2'),
-               url('ubuntu-b-webfont.woff') format('woff');
+          font-family: 'font2-b';
+          src: url('ubuntu-b-webfont.woff2') format('woff2');
+          font-weight: normal;
+          font-style: normal;
+          font-display: swap;
+        }
+        @font-face {
+          font-family: 'font2-r';
+          src: url('ubuntu-r-webfont.woff2') format('woff2');
           font-weight: normal;
           font-style: normal;
           font-display: swap;
         }
         body {
-          font-family: arial, sans-serif;
+          font-family: 'font2-r', sans-serif;
           line-height: 1.6;
           background: #f6f1ee;
           color: rgb(127,110,97);
@@ -37,6 +43,12 @@
           max-width: 80%;
           margin: 0 auto;
         }
+        .signature {
+          margin-top: 40px;
+        }
+        .bold {
+          font-family: 'font2-b', sans-serif;
+        }
         h1, h2 {
             color: rgb(127,110,97);
             font-family: 'font1', sans-serif;
@@ -47,13 +59,18 @@
 </head>
 <body>
   <div class="wrapper">
-    <div class="language">
-      <h1>Hotel La Chouette is closed</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate neque at tempus fringilla. Suspendisse potenti. Integer ipsum mi, porta nec placerat consectetur, efficitur vel nunc. Pellentesque ex eros, suscipit at scelerisque in, euismod sed urna.</p>
+    <div>
+      <h1>La Chouette est fermée</h1>
+      <p>Après plus de deux décennies à accueillir des clients, nous avons décidé de prendre notre retraite. Nous gardons en mémoire les bons souvenirs créés ici.</p>
     </div>
-    <div class="language">
-      <h2>Hotel La Chouette is closed</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate neque at tempus fringilla. Suspendisse potenti. Integer ipsum mi, porta nec placerat consectetur, efficitur vel nunc. Pellentesque ex eros, suscipit at scelerisque in, euismod sed urna.</p>
+    <div>
+      <h2>La Chouette is closed</h2>
+      <p>After more than two decades of welcoming guests we’ve decided to retire. We would like to thank you for the support you have given us over the years and we
+        will cherish the many memories created here.</p>
+    </div>
+    <div class="signature">
+      <p class="bold">Suzanne et Thierry</p>
+      <p>Puligny-Montrachet, 16 septembre 2024</p>
     </div>
   </div>  
 </body>
