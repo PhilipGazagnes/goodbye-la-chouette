@@ -5,20 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hôtel La Chouette à Puligny-Montrachet</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
+        @font-face {
+          font-family: 'font1';
+          src: url('Bellota-Regular-webfont.woff') format('woff');
+          font-weight: normal;
+          font-style: normal;
+          font-display: swap;
         }
-        h1 {
-            color: #333;
+        @font-face {
+          font-family: 'font2';
+          src: url('ubuntu-b-webfont.woff2') format('woff2'),
+               url('ubuntu-b-webfont.woff') format('woff');
+          font-weight: normal;
+          font-style: normal;
+          font-display: swap;
+        }
+        body {
+          font-family: arial, sans-serif;
+          line-height: 1.6;
+          background: #f6f1ee;
+          color: rgb(127,110,97);
+          margin: 0;
+          padding: 0;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          height: 100vh;
+        }
+        .wrapper {
+          width: 500px;
+          max-width: 80%;
+          margin: 0 auto;
+        }
+        h1, h2 {
+            color: rgb(127,110,97);
+            font-family: 'font1', sans-serif;
+            font-weight: normal;
+            font-size: 2em;
         }
     </style>
 </head>
 <body>
-    Hotel La Chouette goodbye page
+  <div class="wrapper">
+    <div class="language">
+      <h1>Hotel La Chouette is closed</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate neque at tempus fringilla. Suspendisse potenti. Integer ipsum mi, porta nec placerat consectetur, efficitur vel nunc. Pellentesque ex eros, suscipit at scelerisque in, euismod sed urna.</p>
+    </div>
+    <div class="language">
+      <h2>Hotel La Chouette is closed</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate neque at tempus fringilla. Suspendisse potenti. Integer ipsum mi, porta nec placerat consectetur, efficitur vel nunc. Pellentesque ex eros, suscipit at scelerisque in, euismod sed urna.</p>
+    </div>
+  </div>  
 </body>
 </html>
